@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="base64">
+      <UniqueIdentifier>{bd6973f2-bd54-4902-a229-8c8bd159fbad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{eb669b9e-c485-439c-b68e-b53926fc2700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="orm">
+      <UniqueIdentifier>{592f89c8-4a07-42b3-adb2-1803b93956b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event">
+      <UniqueIdentifier>{cad1048e-0520-40cf-89b8-5d1142d1921a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cndb">
+      <UniqueIdentifier>{516121ad-9d4c-4e5d-8973-a89c7a312d8a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="base64\base64.h">
+      <Filter>base64</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json-forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="RTFunctor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTManagerLocker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTRecvSendBuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTBlock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTPoint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTDict.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTLog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTMail.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTValue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTHealthStyle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTValueStyle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTIPStyle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTMask.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTNSDB.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTNSTool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTNSStatic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTNSLog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBBase.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBBlock.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBPassword.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBRole.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBSpeed.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBState.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBToken.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBTransfer.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBUser.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="RTServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEBase.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEGame.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEGameFunctor.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEGameStatic.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEGameStyle.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEGS.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEClock.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEClockFunctor.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEClockStatic.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEClockStyle.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEEvent.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEHub.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTERoot.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTERootFunctor.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTERootStatic.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTERootStyle.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTESession.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTESessionFunctor.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTESessionStatic.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTESessionStyle.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEStatic.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTETimer.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEUser.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEUserFunctor.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEUserStatic.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEUserStyle.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="RTNSKeep.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTDataType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTCurrent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTBuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTBufferSimple.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBPackage.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="RTNSNet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBStatic.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="cndb\CNDB.h">
+      <Filter>cndb</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBObjectStyle.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEDB.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEDBFunctor.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEDBStatic.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEDBStyle.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBGame.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBSession.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="cndb\CNNSTool.h">
+      <Filter>cndb</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEStyle.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEReplay.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEReplayFunctor.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEReplayStatic.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEReplayStyle.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBReplay.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBCursor.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTETrail.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTETrailFunctor.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTETrailStatic.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTETrailStyle.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="orm\RTDBRoot.h">
+      <Filter>orm</Filter>
+    </ClInclude>
+    <ClInclude Include="event\RTEPayBase.h">
+      <Filter>event</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="base64\base64.cpp">
+      <Filter>base64</Filter>
+    </ClCompile>
+    <ClCompile Include="json\jsoncpp.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="RTFunctor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTManagerLocker.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTRecvSendBuffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTBlock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTPoint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTDict.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTLog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTMail.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTValue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTArray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTNSDB.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTNSStatic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTNSTool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTNSLog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBBase.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBBlock.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBPassword.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBRole.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBSpeed.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBState.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBToken.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBTransfer.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBUser.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="RTServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEBase.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEGame.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEGameFunctor.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEGameStatic.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEGS.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEClock.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEClockFunctor.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEClockStatic.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEEvent.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEHub.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTERoot.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTERootFunctor.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTERootStatic.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTESession.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTESessionFunctor.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTESessionStatic.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEStatic.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTETimer.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEUser.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEUserFunctor.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEUserStatic.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="RTNSKeep.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTCurrent.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTBuffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTBufferSimple.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBPackage.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="RTNSNet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBStatic.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="cndb\CNDB.cpp">
+      <Filter>cndb</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEDB.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEDBFunctor.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEDBStatic.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBGame.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBSession.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="cndb\CNNSTool.cpp">
+      <Filter>cndb</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEReplay.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEReplayFunctor.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEReplayStatic.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBReplay.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBCursor.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTETrail.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTETrailFunctor.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTETrailStatic.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="orm\RTDBRoot.cpp">
+      <Filter>orm</Filter>
+    </ClCompile>
+    <ClCompile Include="RTMask.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="event\RTEPayBase.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

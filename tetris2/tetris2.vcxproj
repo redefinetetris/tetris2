@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3BE0B072-71CB-43EA-B608-04E1F4CE8BAD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>tetris2</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>event;orm;cndb;json;base64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>event;orm;cndb;json;base64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>event;orm;cndb;json;base64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>event;orm;cndb;json;base64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="cndb\CNDB.h" />
+    <ClInclude Include="cndb\CNNSTool.h" />
+    <ClInclude Include="event\RTEBase.h" />
+    <ClInclude Include="event\RTEClock.h" />
+    <ClInclude Include="event\RTEClockFunctor.h" />
+    <ClInclude Include="event\RTEClockStatic.h" />
+    <ClInclude Include="event\RTEClockStyle.h" />
+    <ClInclude Include="event\RTEDB.h" />
+    <ClInclude Include="event\RTEDBFunctor.h" />
+    <ClInclude Include="event\RTEDBStatic.h" />
+    <ClInclude Include="event\RTEDBStyle.h" />
+    <ClInclude Include="event\RTEEvent.h" />
+    <ClInclude Include="event\RTEGame.h" />
+    <ClInclude Include="event\RTEGameFunctor.h" />
+    <ClInclude Include="event\RTEGameStatic.h" />
+    <ClInclude Include="event\RTEGameStyle.h" />
+    <ClInclude Include="event\RTEGS.h" />
+    <ClInclude Include="event\RTEHub.h" />
+    <ClInclude Include="event\RTEPayBase.h" />
+    <ClInclude Include="event\RTEReplay.h" />
+    <ClInclude Include="event\RTEReplayFunctor.h" />
+    <ClInclude Include="event\RTEReplayStatic.h" />
+    <ClInclude Include="event\RTEReplayStyle.h" />
+    <ClInclude Include="event\RTERoot.h" />
+    <ClInclude Include="event\RTERootFunctor.h" />
+    <ClInclude Include="event\RTERootStatic.h" />
+    <ClInclude Include="event\RTERootStyle.h" />
+    <ClInclude Include="event\RTESession.h" />
+    <ClInclude Include="event\RTESessionFunctor.h" />
+    <ClInclude Include="event\RTESessionStatic.h" />
+    <ClInclude Include="event\RTESessionStyle.h" />
+    <ClInclude Include="event\RTEStatic.h" />
+    <ClInclude Include="event\RTEStyle.h" />
+    <ClInclude Include="event\RTETimer.h" />
+    <ClInclude Include="event\RTETrail.h" />
+    <ClInclude Include="event\RTETrailFunctor.h" />
+    <ClInclude Include="event\RTETrailStatic.h" />
+    <ClInclude Include="event\RTETrailStyle.h" />
+    <ClInclude Include="event\RTEUser.h" />
+    <ClInclude Include="event\RTEUserFunctor.h" />
+    <ClInclude Include="event\RTEUserStatic.h" />
+    <ClInclude Include="event\RTEUserStyle.h" />
+    <ClInclude Include="orm\RTDBBase.h" />
+    <ClInclude Include="orm\RTDBBlock.h" />
+    <ClInclude Include="orm\RTDBCursor.h" />
+    <ClInclude Include="orm\RTDBGame.h" />
+    <ClInclude Include="orm\RTDBObjectStyle.h" />
+    <ClInclude Include="orm\RTDBPackage.h" />
+    <ClInclude Include="orm\RTDBPassword.h" />
+    <ClInclude Include="orm\RTDBReplay.h" />
+    <ClInclude Include="orm\RTDBRole.h" />
+    <ClInclude Include="orm\RTDBRoot.h" />
+    <ClInclude Include="orm\RTDBSession.h" />
+    <ClInclude Include="orm\RTDBSpeed.h" />
+    <ClInclude Include="orm\RTDBState.h" />
+    <ClInclude Include="orm\RTDBStatic.h" />
+    <ClInclude Include="orm\RTDBToken.h" />
+    <ClInclude Include="orm\RTDBTransfer.h" />
+    <ClInclude Include="orm\RTDBUser.h" />
+    <ClInclude Include="RTArray.h" />
+    <ClInclude Include="base64\base64.h" />
+    <ClInclude Include="RTBuffer.h" />
+    <ClInclude Include="RTBufferSimple.h" />
+    <ClInclude Include="RTCurrent.h" />
+    <ClInclude Include="RTDataType.h" />
+    <ClInclude Include="RTNSKeep.h" />
+    <ClInclude Include="RTNSDB.h" />
+    <ClInclude Include="RTHealthStyle.h" />
+    <ClInclude Include="json\json-forwards.h" />
+    <ClInclude Include="json\json.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="RTBase.h" />
+    <ClInclude Include="RTBlock.h" />
+    <ClInclude Include="RTDict.h" />
+    <ClInclude Include="RTFunctor.h" />
+    <ClInclude Include="RTIPStyle.h" />
+    <ClInclude Include="RTLog.h" />
+    <ClInclude Include="RTMail.h" />
+    <ClInclude Include="RTManager.h" />
+    <ClInclude Include="RTManagerLocker.h" />
+    <ClInclude Include="RTMask.h" />
+    <ClInclude Include="RTNSLog.h" />
+    <ClInclude Include="RTNSNet.h" />
+    <ClInclude Include="RTPoint.h" />
+    <ClInclude Include="RTRecvSendBuffer.h" />
+    <ClInclude Include="RTNSStatic.h" />
+    <ClInclude Include="RTNSTool.h" />
+    <ClInclude Include="RTServer.h" />
+    <ClInclude Include="RTValue.h" />
+    <ClInclude Include="RTValueStyle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cndb\CNDB.cpp" />
+    <ClCompile Include="cndb\CNNSTool.cpp" />
+    <ClCompile Include="event\RTEBase.cpp" />
+    <ClCompile Include="event\RTEClock.cpp" />
+    <ClCompile Include="event\RTEClockFunctor.cpp" />
+    <ClCompile Include="event\RTEClockStatic.cpp" />
+    <ClCompile Include="event\RTEDB.cpp" />
+    <ClCompile Include="event\RTEDBFunctor.cpp" />
+    <ClCompile Include="event\RTEDBStatic.cpp" />
+    <ClCompile Include="event\RTEEvent.cpp" />
+    <ClCompile Include="event\RTEGame.cpp" />
+    <ClCompile Include="event\RTEGameFunctor.cpp" />
+    <ClCompile Include="event\RTEGameStatic.cpp" />
+    <ClCompile Include="event\RTEGS.cpp" />
+    <ClCompile Include="event\RTEHub.cpp" />
+    <ClCompile Include="event\RTEPayBase.cpp" />
+    <ClCompile Include="event\RTEReplay.cpp" />
+    <ClCompile Include="event\RTEReplayFunctor.cpp" />
+    <ClCompile Include="event\RTEReplayStatic.cpp" />
+    <ClCompile Include="event\RTERoot.cpp" />
+    <ClCompile Include="event\RTERootFunctor.cpp" />
+    <ClCompile Include="event\RTERootStatic.cpp" />
+    <ClCompile Include="event\RTESession.cpp" />
+    <ClCompile Include="event\RTESessionFunctor.cpp" />
+    <ClCompile Include="event\RTESessionStatic.cpp" />
+    <ClCompile Include="event\RTEStatic.cpp" />
+    <ClCompile Include="event\RTETimer.cpp" />
+    <ClCompile Include="event\RTETrail.cpp" />
+    <ClCompile Include="event\RTETrailFunctor.cpp" />
+    <ClCompile Include="event\RTETrailStatic.cpp" />
+    <ClCompile Include="event\RTEUser.cpp" />
+    <ClCompile Include="event\RTEUserFunctor.cpp" />
+    <ClCompile Include="event\RTEUserStatic.cpp" />
+    <ClCompile Include="orm\RTDBBase.cpp" />
+    <ClCompile Include="orm\RTDBBlock.cpp" />
+    <ClCompile Include="orm\RTDBCursor.cpp" />
+    <ClCompile Include="orm\RTDBGame.cpp" />
+    <ClCompile Include="orm\RTDBPackage.cpp" />
+    <ClCompile Include="orm\RTDBPassword.cpp" />
+    <ClCompile Include="orm\RTDBReplay.cpp" />
+    <ClCompile Include="orm\RTDBRole.cpp" />
+    <ClCompile Include="orm\RTDBRoot.cpp" />
+    <ClCompile Include="orm\RTDBSession.cpp" />
+    <ClCompile Include="orm\RTDBSpeed.cpp" />
+    <ClCompile Include="orm\RTDBState.cpp" />
+    <ClCompile Include="orm\RTDBStatic.cpp" />
+    <ClCompile Include="orm\RTDBToken.cpp" />
+    <ClCompile Include="orm\RTDBTransfer.cpp" />
+    <ClCompile Include="orm\RTDBUser.cpp" />
+    <ClCompile Include="RTArray.cpp" />
+    <ClCompile Include="base64\base64.cpp" />
+    <ClCompile Include="json\jsoncpp.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RTBase.cpp" />
+    <ClCompile Include="RTBlock.cpp" />
+    <ClCompile Include="RTBuffer.cpp" />
+    <ClCompile Include="RTBufferSimple.cpp" />
+    <ClCompile Include="RTCurrent.cpp" />
+    <ClCompile Include="RTNSKeep.cpp" />
+    <ClCompile Include="RTNSDB.cpp" />
+    <ClCompile Include="RTDict.cpp" />
+    <ClCompile Include="RTFunctor.cpp" />
+    <ClCompile Include="RTLog.cpp" />
+    <ClCompile Include="RTMail.cpp" />
+    <ClCompile Include="RTManager.cpp" />
+    <ClCompile Include="RTManagerLocker.cpp" />
+    <ClCompile Include="RTMask.cpp" />
+    <ClCompile Include="RTNSLog.cpp" />
+    <ClCompile Include="RTNSNet.cpp" />
+    <ClCompile Include="RTPoint.cpp" />
+    <ClCompile Include="RTRecvSendBuffer.cpp" />
+    <ClCompile Include="RTNSStatic.cpp" />
+    <ClCompile Include="RTNSTool.cpp" />
+    <ClCompile Include="RTServer.cpp" />
+    <ClCompile Include="RTValue.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
